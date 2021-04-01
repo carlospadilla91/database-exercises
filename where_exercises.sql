@@ -13,7 +13,7 @@ SELECT * FROM employees WHERE last_name LIKE '%q%';
 SELECT * FROM employees WHERE first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya';
 
 #TODO Add a condition to the previous query to find everybody with those names who is also male — 441 rows.
-SELECT * FROM employees WHERE gender = 'M' AND first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya';
+SELECT * FROM employees WHERE gender = 'M' AND (first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya');
 
 #TODO Find all employees whose last name starts or ends with 'E' — 30,723 rows.
 SELECT * FROM employees WHERE last_name LIKE 'E%' OR last_name LIKE '%e';
