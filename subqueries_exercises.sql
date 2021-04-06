@@ -51,6 +51,3 @@ where emp_no in (
     where salary = (select max(salary) from salaries)
 );
 
-select max(salary)
-from salaries;
-
